@@ -1,6 +1,6 @@
 {
-  "name": "react-native-feedback-example",
-  "description": "Example app for react-native-feedback",
+  "name": "react-native-user-feedback-example",
+  "description": "Example app for react-native-user-feedback",
   "version": "0.0.1",
   "private": true,
   "scripts": {

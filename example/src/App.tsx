@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
-import UserFeedback, { Number } from 'react-native-feedback';
+import UserFeedback, { Number } from 'react-native-user-feedback';
 
 export default function App() {
   const [numberRating, setNumberRating] = React.useState(5);

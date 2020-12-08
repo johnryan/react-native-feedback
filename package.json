@@ -1,5 +1,5 @@
 {
-  "name": "react-native-feedback",
+  "name": "react-native-user-feedback",
   "version": "0.1.0",
   "description": "Collect numberic feedback from your users",
   "main": "lib/commonjs/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-feedback.podspec",
+    "react-native-user-feedback.podspec",
     "!lib/typescript/example",
     "!**/__tests__",
     "!**/__fixtures__",
@@ -34,13 +34,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/johnryan/react-native-feedback",
+  "repository": "https://github.com/johnryan/react-native-user-feedback",
   "author": "John Ryan <johnryan1@gmail.com> (https://github.com/johnryan)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johnryan/react-native-feedback/issues"
+    "url": "https://github.com/johnryan/react-native-user-feedback/issues"
   },
-  "homepage": "https://github.com/johnryan/react-native-feedback#readme",
+  "homepage": "https://github.com/johnryan/react-native-user-feedback#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/bob": "^0.16.2",

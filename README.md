@@ -1,23 +1,23 @@
-# react-native-feedback
+# react-native-user-feedback
 
-Collect feedback from your users for any purpose. `react-native-feedback` is a flexible component for iOS and Android that allows you to render star or numeric feedback as well as provide your own custom renderer.
+Collect feedback from your users for any purpose. `react-native-user-feedback` is a flexible component for iOS and Android that allows you to render star or numeric feedback as well as provide your own custom renderer.
 
 ## Installation
 
 ```sh
-npm install react-native-feedback
+npm install react-native-user-feedback
 ```
 
 or for `Yarn`
 
 ```sh
-yarn add react-native-feedback
+yarn add react-native-user-feedback
 ```
 
 ## Usage
 
 ```js
-import UserFeedback from 'react-native-feedback';
+import UserFeedback from 'react-native-user-feedback';
 
 // ...
 
@@ -46,7 +46,7 @@ Usage:
 Usage:
 
 ```
-import { Star } from "react-native-feedback"
+import { Star } from "react-native-user-feedback"
 
 <UserFeedback
   maxNumber={10}
@@ -63,7 +63,7 @@ Provides a numeric interface for feedback
 Usage:
 
 ```
-import { Number } from "react-native-feedback"
+import { Number } from "react-native-user-feedback"
 
 <UserFeedback
   maxNumber={10}
