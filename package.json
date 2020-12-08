@@ -1,7 +1,7 @@
 {
   "name": "react-native-user-feedback",
-  "version": "0.1.1",
-  "description": "Collect numberic feedback from your users",
+  "version": "0.1.2",
+  "description": "Collect numberi feedback from your users",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
