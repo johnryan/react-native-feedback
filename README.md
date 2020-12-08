@@ -2,6 +2,8 @@
 
 Collect feedback from your users for any purpose. `react-native-user-feedback` is a flexible component for iOS and Android that allows you to render star or numeric feedback as well as provide your own custom renderer.
 
+<img src="./demo.gif" height="600"/>
+
 ## Installation
 
 ```sh
