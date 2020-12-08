@@ -56,7 +56,7 @@ import { Star } from "react-native-user-feedback"
 />;
 ```
 
-### Star
+### Number
 
 Provides a numeric interface for feedback
 
