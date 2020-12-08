@@ -1,17 +1,26 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import Feedback from 'react-native-feedback';
+import { StyleSheet, View } from 'react-native';
+import UserFeedback, { Number } from 'react-native-feedback';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [numberRating, setNumberRating] = React.useState(5);
 
-  React.useEffect(() => {
-    Feedback.multiply(3, 7).then(setResult);
-  }, []);
+  const [starRating, setStarRating] = React.useState(1);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <UserFeedback
+        maxNumber={10}
+        rating={numberRating}
+        onRatingChanged={setNumberRating}
+        renderRating={Number}
+      />
+
+      <UserFeedback
+        maxNumber={5}
+        rating={starRating}
+        onRatingChanged={setStarRating}
+      />
     </View>
   );
 }

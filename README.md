@@ -1,6 +1,6 @@
 # react-native-feedback
 
-Collect numberic feedback from your users
+Collect feedback from your users for any purpose. `react-native-feedback` is a flexible component for iOS and Android that allows you to render star or numeric feedback as well as provide your own custom renderer.
 
 ## Installation
 
@@ -8,14 +8,69 @@ Collect numberic feedback from your users
 npm install react-native-feedback
 ```
 
+or for `Yarn`
+
+```sh
+yarn add react-native-feedback
+```
+
 ## Usage
 
 ```js
-import Feedback from "react-native-feedback";
+import UserFeedback from 'react-native-feedback';
 
 // ...
 
-const result = await Feedback.multiply(3, 7);
+<UserFeedback
+  maxNumber={10}
+  rating={numberRating}
+  onRatingChanged={setNumberRating}
+  renderRating={Number}
+/>;
+```
+
+| Prop            | Description                               | Type       | Default |
+| --------------- | ----------------------------------------- | ---------- | ------- |
+| maxNumber       | the maximum range of the feedback         | `number`   | 5       |
+| rating          | The current rating                        | `number`   | 0       |
+| onRatingChanged | called when the user selects a new rating | `function` | `null`  |
+| renderRating    | callback for custom ratings               | `function` | `Star`  |
+
+## Provided Renderers
+
+### Star
+
+Provides a star based interface for feedback
+
+Usage:
+Usage:
+
+```
+import { Star } from "react-native-feedback"
+
+<UserFeedback
+  maxNumber={10}
+  rating={numberRating}
+  onRatingChanged={setNumberRating}
+  renderRating={Star}
+/>;
+```
+
+### Star
+
+Provides a numeric interface for feedback
+
+Usage:
+
+```
+import { Number } from "react-native-feedback"
+
+<UserFeedback
+  maxNumber={10}
+  rating={numberRating}
+  onRatingChanged={setNumberRating}
+  renderRating={Number}
+/>;
 ```
 
 ## Contributing
